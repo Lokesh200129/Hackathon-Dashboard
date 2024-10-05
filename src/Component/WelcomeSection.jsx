@@ -1,17 +1,32 @@
-import { Button } from 'react-bootstrap'
-import mainIcon from '../assets/icons/PicsArt_04-14-04.42 1.svg'
+import { Button, Container, Row, Col } from 'react-bootstrap';
+import mainIcon from '../assets/icons/PicsArt_04-14-04.42 1.svg';
+import '../CSS/WelcomeSection.css'
+import { Link } from 'react-router-dom';
 function WelcomeSection() {
     return (
         <>
-            <div>
-                <h1>Accelerate Innovation <span>With Global AI Challenge</span></h1>
-                <p>AI Challenge at DPHI simulate real world problem. It is a great place to put your AI/Data science skills to test on diverse datasets allowing you to faster learning through competitions.</p>
-                <Button variant='light'>Create Challenge</Button>
-            </div>
+            <Container fluid className="text-center text-white py-5 custom-bg-light w-auto">
+                <Row className="align-items-center ms-5 ps-5 ">
+                    <Col md={6} className="text-start  ">
+                        <h1>
+                            Accelerate Innovation 
+                        </h1>
+                        <h1>With Global AI Challenge</h1>
+                        <p className="my-4">
+                            AI Challenge at DPHI simulates real-world problems. It is a great place to put your AI/Data science skills to test on diverse datasets, allowing you to accelerate learning through competitions.
+                        </p>
+                        <Link to='/create'>
+                            <Button variant="light">Create Challenge</Button>
 
-            <figure>
-                <img src={mainIcon} alt="Icon" />
-            </figure>
+                        </Link>
+                    </Col>
+                    <Col md={6}>
+                        <figure className="text-center">
+                            <img src={mainIcon} alt="Icon" className="img-fluid" />
+                        </figure>
+                    </Col>
+                </Row>
+            </Container>
 
         </>
     )
