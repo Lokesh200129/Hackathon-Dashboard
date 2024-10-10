@@ -8,7 +8,7 @@ function ObjectiveSection() {
     return (
         <Container fluid className="py-5">
             <h1 className="text-center mb-5">Why Participate in AI Challenges?</h1>
-            <Row className="justify-content-center">
+            <Row className="justify-content-center ">
                 <Col md={5} className="mb-4">
                     <div className=" align-items-center p-3 border rounded">
                         <figure className="mb-0 me-3">
@@ -21,7 +21,7 @@ function ObjectiveSection() {
                     </div>
                 </Col>
                 <Col md={5} className="mb-4">
-                    <div className="align-items-center p-3 border rounded">
+                    <div className="align-items-center p-3 border rounded h-100">
                         <figure className="mb-0 me-3">
                             <img src={PeopleIcon} alt="Learn From Community" className="img-fluid" />
                         </figure>
@@ -32,7 +32,7 @@ function ObjectiveSection() {
                     </div>
                 </Col>
                 <Col md={5} className="mb-4">
-                    <div className=" align-items-center p-3 border rounded">
+                    <div className=" align-items-center p-3 border rounded h-100">
                         <figure className="mb-0 me-3">
                             <img src={RobotIcon} alt="Challenge Yourself" className="img-fluid" />
                         </figure>

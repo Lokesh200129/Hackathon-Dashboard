@@ -6,7 +6,7 @@ function WelcomeSection() {
     return (
         <>
             <Container fluid className="text-center text-white py-5 custom-bg-light w-auto">
-                <Row className="align-items-center ms-5 ps-5 ">
+                <Row className="align-items-center ms-sm-5 ms-1 ps-sm-5 ps-1  ">
                     <Col md={6} className="text-start  ">
                         <h1>
                             Accelerate Innovation 

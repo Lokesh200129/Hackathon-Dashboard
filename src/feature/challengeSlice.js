@@ -1,15 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-    challenges: [{
-        id: 1,
-        name: "abc",
-        startDate: 12,
-        endDate: 23,
-        description: "abc abc abc abc",
-        image: "image.com",
-        level: "easy"
-    }]
+    challenges: []
 }
 const challengeSlice = createSlice({
     name: 'challenges',

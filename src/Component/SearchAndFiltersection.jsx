@@ -1,6 +1,6 @@
-import { Container, Row, Col, Dropdown, Form } from 'react-bootstrap';
+import { Container, Row, Col, Dropdown , DropdownButton, Form } from 'react-bootstrap';
 import '../CSS/SearchAndFilter.css'
-function SearchAndFiltersection({setSearch}) {
+function SearchAndFiltersection({setSearch, handleFilterChange, handleLevelChange}) {
     return (
         <Container fluid className="py-5 custom-bg-dark text-light  ">
             <h1 className="text-center mb-4">Explore Challenges</h1>
@@ -14,23 +14,17 @@ function SearchAndFiltersection({setSearch}) {
                     />
                 </Col>
                 <Col md={3} lg={2}>
-                    <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic" className="w-100">
-                            Filter
-                        </Dropdown.Toggle>
-
-                        <Dropdown.Menu>
-                            <Dropdown.Item>All</Dropdown.Item>
-                            <Dropdown.Item>Active</Dropdown.Item>
-                            <Dropdown.Item>Upcoming</Dropdown.Item>
-                            <Dropdown.Item>Past</Dropdown.Item>
+                    <DropdownButton title="Filter">
+                            <Dropdown.Item onClick={()=>handleFilterChange("all")}>All</Dropdown.Item>
+                            <Dropdown.Item onClick={()=>handleFilterChange("active")}>Active</Dropdown.Item>
+                            <Dropdown.Item onClick={()=>handleFilterChange("upcoming")}>Upcoming</Dropdown.Item>
+                            <Dropdown.Item onClick={()=>handleFilterChange("past")}>Past</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item><b>Level</b></Dropdown.Item>
-                            <Dropdown.Item>Easy</Dropdown.Item>
-                            <Dropdown.Item>Medium</Dropdown.Item>
-                            <Dropdown.Item>Hard</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
+                            <Dropdown.Item onClick={()=>handleLevelChange("easy")}>Easy</Dropdown.Item>
+                            <Dropdown.Item onClick={()=>handleLevelChange("medium")}>Medium</Dropdown.Item> 
+                            <Dropdown.Item onClick={()=>handleLevelChange("hard")}>Hard</Dropdown.Item>
+                    </DropdownButton>
                 </Col>
             </Row>
         </Container>
