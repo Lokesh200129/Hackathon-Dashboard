@@ -36,7 +36,7 @@ function HackathonSection() {
        <>
             <SearchAndFiltersection setSearch={setSearch} handleFilterChange={handleFilterChange} handleLevelChange={handleLevelChange} />
             <Container fluid className="p-5 custom-bg-light ">
-                <Row className=" m-auto  col-8">
+                <Row className=" m-sm-auto  col-sm-8">
                     {challenges.length > 0 ?  
                                         filteredChallenge.length > 0 ? 
                                                             filteredChallenge.map((item) => (

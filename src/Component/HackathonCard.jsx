@@ -48,7 +48,7 @@ function HackathonCard({ name , startDate, endDate, image }) {
         }
     }, [])
     return (
-        <Card className="text-center text-dark mb-4 shadow-sm h-30 w-70 border border-1 rounded-top">
+        <Card className="text-center text-dark mb-sm-4  shadow-sm h-30 w-70 border border-1 rounded-top">
             <Card.Img variant='top' src={image} alt="Image" className='bg-transparent h-100' />
             <Card.Body className='bg-white rounded-bottom text-center '>
                 <Alert variant={variant} className="mb-3 p-1 w-75 m-auto">{alertMessage}</Alert>
