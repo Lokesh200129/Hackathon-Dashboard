@@ -1,5 +1,5 @@
 import { Button, Card, Alert } from 'react-bootstrap';
-import CorrectIcon from '../assets/icons/Correct_icon.png';
+
 import { useEffect, useState } from 'react';
 function HackathonCard({ name , startDate, endDate, image }) {
     const hackathonDate = new Date(startDate)
@@ -62,7 +62,7 @@ function HackathonCard({ name , startDate, endDate, image }) {
                     }
                 </Card.Text>
                 <Button variant="success">
-                    <img src={CorrectIcon} alt="Icon" className="me-2" />
+                    
                     Participate Now
                 </Button>
             </Card.Body>
